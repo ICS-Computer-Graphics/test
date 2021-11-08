@@ -36,7 +36,41 @@ int main(void)
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
         glClearColor(1, 1, 1, 1);
-        
+            //window on the left
+        glBegin(GL_LINE_LOOP);
+        glColor3f(0, 0, 0);
+        glVertex2f(-0.6f,-0.1f);
+        glVertex2f(-0.3f,-0.1f);
+        glVertex2f(-0.3f,-0.4f);
+        glVertex2f(-0.6f,-0.4);
+        glEnd();
+
+        glBegin(GL_LINES);
+        glColor3f(0, 0, 0);
+        glVertex2f(-0.6f,-0.25f);
+        glVertex2f(-0.3f,-0.25f);
+        glVertex2f(-0.45f,-0.4f);
+        glVertex2f(-0.45f,-0.1f);
+        glEnd();
+
+           
+
+        //window on the right
+        glBegin(GL_LINE_LOOP);
+        glColor3f(0, 0, 0);
+         glVertex2f(0.2f,-0.1f);
+        glVertex2f(0.5f,-0.1f);
+        glVertex2f(0.5f,-0.4f);
+        glVertex2f(0.2f,-0.4f);
+        glEnd();
+
+        glBegin(GL_LINES);
+        glColor3f(0, 0, 0);
+        glVertex2f(0.2f, -0.25f);
+        glVertex2f(0.5f, -0.25f);
+        glVertex2f(0.35f, -0.1f);
+        glVertex2f(0.35f, -0.4f);
+        glEnd();
 
         glBegin(GL_POLYGON);
         glColor3f(1.0, 1.0, 0); // Middle circle
